@@ -1,0 +1,35 @@
+/* ========================================
+
+    CODE YOUR STYLES BELOW!
+
+   ====================================== */
+
+.image {
+  position: relative;
+  display: inline-block;
+  font-family: Arial, sans serif;
+  font-size: 0.7em;
+  text-align: center;
+  text-transform: uppercase;
+  border: 1px dashed #888888;
+  width: 280px;
+  height: 50px;
+  margin: 7px 0;
+}
+
+.image:after {
+  display: inherit;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-width: 200px;
+  padding: 10px 25px;
+  background-color: #f0f0f0;
+  background-image: url(./noimage.png);
+  background-size: 8%;
+  background-repeat: no-repeat;
+  background-position: 15px 10px;
+  z-index: 1;
+  content: "" attr(alt) " Not Found";
+}
